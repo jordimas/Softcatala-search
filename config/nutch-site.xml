@@ -1,0 +1,58 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+
+<!-- Put site-specific property overrides in this file conf. -->
+
+<configuration>
+<property>
+ <name>storage.data.store.class</name>
+ <value>org.apache.gora.cassandra.store.CassandraStore</value> 
+ <description>Default class for storing data</description>
+</property>
+
+<property>
+ <name>http.agent.name</name>
+ <value>My Nutch Spider</value>
+</property>
+
+<property>
+ <name>http.robots.agents</name>
+ <value>My Nutch Spider</value>
+</property>
+
+<property>  
+    <name>db.ignore.external.links</name>
+    <value>true</value>
+</property>
+
+<property>
+  <name>fetcher.server.delay</name>
+  <value>0</value>
+  <description>The number of seconds the fetcher will delay between 
+   successive requests to the same server.</description>
+</property>
+
+<property>
+  <name>fetcher.verbose</name>
+  <value>true</value>
+  <description>If true, fetcher will log more verbosely.</description>
+</property>
+
+<property>
+  <name>db.update.max.inlinks</name>
+  <value>50000</value>
+  <description>Maximum number of inlinks to take into account when updating 
+  a URL score in the crawlDB. Only the best scoring inlinks are kept. 
+  </description>
+</property>
+
+<!-- Controls download speed -->
+<property>
+    <name>fetcher.threads.per.queue</name>
+   <value>50</value>
+   <description></description>
+</property>
+
+
+</configuration>
+
