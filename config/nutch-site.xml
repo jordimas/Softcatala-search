@@ -46,12 +46,39 @@
   </description>
 </property>
 
+<!-- Frequency: 3 days -->
+
+<property>
+  <name>db.fetch.interval.default</name>
+  <value>259200</value>
+  <description>The default number of seconds between re-fetches of a page (30 days).
+  </description>
+</property>
+
+<property>
+  <name>db.fetch.interval.max</name>
+  <value>259200</value>
+  <description>The maximum number of seconds between re-fetches of a page
+  (90 days). After this period every page in the db will be re-tried, no
+  matter what is its status.
+  </description>
+</property>
+
 <!-- Controls download speed -->
 <property>
     <name>fetcher.threads.per.queue</name>
    <value>50</value>
    <description></description>
 </property>
+
+<!-- This should help to make sure that the injected url www.softcatala.org does not get a boost of 1 -->
+<property>
+  <name>db.score.injected</name>
+  <value>0</value>
+  <description>The score of new pages added by the injector.
+  </description>
+</property>
+
 
 
 </configuration>
