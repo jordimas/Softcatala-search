@@ -31,7 +31,7 @@ function on_search() {
         return;
     }
 
-    var url='http://localhost:8983/solr/collection1/select?q='+query+'&hl=true&hl.simple.pre=<b>&hl.simple.post=</b>&hl.fl=*&version=2.2&start=0&rows=100&indent=on&wt=json&callback=?&json.wrf=on_data';
+    var url='http://www.softcatala.org/solr/collection1/select?q='+query+'&hl=true&hl.simple.pre=<b>&hl.simple.post=</b>&hl.fl=*&version=2.2&start=0&rows=100&indent=on&wt=json&callback=?&json.wrf=on_data';
     $.getJSON(url);
 }
 
